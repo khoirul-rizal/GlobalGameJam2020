@@ -131,3 +131,4 @@ MonoBehaviour:
   - {fileID: -7876608783417394723, guid: e74f4c9a0bfb43e479aed0ba8f7abefd, type: 3}
   - {fileID: 7356960266907266329, guid: e74f4c9a0bfb43e479aed0ba8f7abefd, type: 3}
   - {fileID: -9089755217978566909, guid: e74f4c9a0bfb43e479aed0ba8f7abefd, type: 3}
+  cleanTreshold: 1

@@ -11,10 +11,16 @@ public class CharacterController : MonoBehaviour
     float groundDeceleration = 5;
 
     GameObject objectiveGO;
-    
     [SerializeField]
     GameObject currentGO;
     PublicEnum.typeObjective currentObj;
+    public int playerState;
+    /*
+     0 = not carrying
+     1 = caryying body
+     2 = caryying mop
+     3 = mopping
+    */
     void Start()
     {
       // player = gameObject.GetComponent<GameObject>();
@@ -73,14 +79,40 @@ public class CharacterController : MonoBehaviour
     }
     void CharacterInteraction()
     {
+      if(Input.GetButtonUp("Interact") && playerState == 3) playerState = 0;
       if(Input.GetButton("Interact")){
         if(objectiveGO != null){
-          currentGO = objectiveGO;
-          objectiveGO.SetActive(false);
+          ObjectInteraction objectInteraction = objectiveGO.GetComponent<ObjectInteraction>();
+
+          if(playerState != 1)
+          {
+            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.cleanBlood) InteractionBlood(objectInteraction);
+            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.cleanBody) InteractionBody(objectInteraction);
+          }else{
+            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.truckDumper) InteractionTruckDumper(objectInteraction);
+
+            Debug.Log("You carrying body");
+          }
+
         }
       }
     }
-    
+    void InteractionTruckDumper(ObjectInteraction oi)
+    {
+      playerState = 0;
+      Destroy(currentGO);
+      currentGO = null;
+    }
+    void InteractionBody(ObjectInteraction oi)
+    {
+      currentGO = objectiveGO;
+      playerState = 1;
+    }
+    void InteractionBlood(ObjectInteraction oi)
+    {
+      playerState = 3;
+      oi.cleanTreshold -= float.Parse("0.2") * Time.deltaTime;
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
       if(collision.gameObject.tag == "Finish"){
@@ -98,5 +130,9 @@ public class CharacterController : MonoBehaviour
 
     public Vector2 Velocity(){
       return velocity;
+    }
+
+    public int PlayerState(){
+      return playerState;
     }
 }

@@ -8,6 +8,7 @@ public class AnimSprite : EditorWindow
     public Texture2D texture;
     public int width ;
     public int height ;
+    public int pixelPerUnit;
     int tab;
     [MenuItem("Window/Alpha/SmartSprite")]
 
@@ -32,6 +33,7 @@ public class AnimSprite : EditorWindow
             GUILayout.Label("This is Label");
             width = EditorGUILayout.IntField("SpriteWidth", width);
             height = EditorGUILayout.IntField("SpriteHeight", height);
+            pixelPerUnit = EditorGUILayout.IntField("pixelPerUnit", pixelPerUnit);
 
 
             if (GUILayout.Button("Reimport"))

@@ -4,7 +4,8 @@
     {
         empty,
         cleanBody,
-        cleanBlood
+        cleanBlood,
+        truckDumper
     }
     
     public enum deadBody
