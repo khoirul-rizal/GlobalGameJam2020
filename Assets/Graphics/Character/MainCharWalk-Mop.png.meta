@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: 3778b7d33d3b8e346af7894fea4f82ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9044786021765537137
+    second: 0, 0
+  - first:
+      213: 3647156553916755266
+    second: 0, 1
+  - first:
+      213: -7025760825990288548
+    second: 0, 2
+  - first:
+      213: 1008453939145656331
+    second: 0, 3
+  - first:
+      213: 1597549310618978472
+    second: title[title.Length-1]1, 0
+  - first:
+      213: -6582473036885705784
+    second: title[title.Length-1]0, 0
+  - first:
+      213: -4984358786368364121
+    second: title[title.Length-1]1, 1
+  - first:
+      213: -1301946622013478279
+    second: title[title.Length-1]0, 1
+  - first:
+      213: -1214693828660109541
+    second: title[title.Length-1]1, 2
+  - first:
+      213: -61710843128921759
+    second: title[title.Length-1]0, 2
+  - first:
+      213: -3003023656033263900
+    second: title[title.Length-1]1, 3
+  - first:
+      213: 4973985910238711839
+    second: title[title.Length-1]0, 3
+  - first:
+      213: 7247952699997071749
+    second: MainCharWalk-Mop.png1, 0
+  - first:
+      213: -1921238593666321590
+    second: MainCharWalk-Mop.png0, 0
+  - first:
+      213: -2374585801566167929
+    second: MainCharWalk-Mop.png1, 1
+  - first:
+      213: 5952623592312919791
+    second: MainCharWalk-Mop.png0, 1
+  - first:
+      213: -2537782778494383584
+    second: MainCharWalk-Mop.png1, 2
+  - first:
+      213: -8358434314181663661
+    second: MainCharWalk-Mop.png0, 2
+  - first:
+      213: -7962898736285513418
+    second: MainCharWalk-Mop.png1, 3
+  - first:
+      213: 8387465814490614054
+    second: MainCharWalk-Mop.png0, 3
+  - first:
+      213: -5949787746765341107
+    second: MainCharWalk-Mop1, 0
+  - first:
+      213: 7484385206399540469
+    second: MainCharWalk-Mop0, 0
+  - first:
+      213: 9158535161477589116
+    second: MainCharWalk-Mop1, 1
+  - first:
+      213: -7729749079950622483
+    second: MainCharWalk-Mop0, 1
+  - first:
+      213: -778005110726588919
+    second: MainCharWalk-Mop1, 2
+  - first:
+      213: 5382388049073843138
+    second: MainCharWalk-Mop0, 2
+  - first:
+      213: -2042764032487407560
+    second: MainCharWalk-Mop1, 3
+  - first:
+      213: -8951508953234449591
+    second: MainCharWalk-Mop0, 3
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainCharWalk-Mop1, 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e7411519b1e6da0800000000000000
+      internalID: -5949787746765341107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop0, 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc12a5f0b0edd760800000000000000
+      internalID: 7484385206399540469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop1, 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78ebc29437a91f70800000000000000
+      internalID: 9158535161477589116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop0, 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de004ae6a2a6ab490800000000000000
+      internalID: -7729749079950622483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop1, 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90604bd4978f335f0800000000000000
+      internalID: -778005110726588919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop0, 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbaa5cd96512ba40800000000000000
+      internalID: 5382388049073843138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop1, 3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830c4ab7fe4a6a3e0800000000000000
+      internalID: -2042764032487407560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainCharWalk-Mop0, 3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b5bbeb80ad5c380800000000000000
+      internalID: -8951508953234449591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

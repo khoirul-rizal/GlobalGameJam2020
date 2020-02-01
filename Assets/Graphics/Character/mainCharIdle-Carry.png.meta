@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: c8cd50342b6881c47938ae455dd09a65
+guid: 9148722239296f945aa3b0ac0a840a49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8415700693679976518
-    second: Main Char2 Walk_0
+      213: -1089144892780137783
+    second: 1, 0
   - first:
-      213: -8254788361838668332
-    second: Main Char2 Walk_1
+      213: -699172573524776084
+    second: 1, 1
   - first:
-      213: 1154324840137154965
-    second: Main Char2 Walk_2
+      213: 1597549310618978472
+    second: title[title.Length-1]1, 0
   - first:
-      213: -8808697591656807838
-    second: Main Char2 Walk_3
+      213: -4984358786368364121
+    second: title[title.Length-1]1, 1
+  - first:
+      213: 4512214018396787909
+    second: mainCharIdle-Carry.png1, 0
+  - first:
+      213: 8651463632985439266
+    second: mainCharIdle-Carry.png1, 1
+  - first:
+      213: -7812882743702074911
+    second: mainCharIdle-Carry1, 0
+  - first:
+      213: 6829179676310371744
+    second: mainCharIdle-Carry1, 1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,7 +60,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -57,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,85 +122,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Char2 Walk_0
+      name: mainCharIdle-Carry1, 0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: da97c84d2300f4343a68a750d819fb78
-      internalID: 8415700693679976518
+      spriteID: 1e9cbddf980139390800000000000000
+      internalID: -7812882743702074911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main Char2 Walk_1
+      name: mainCharIdle-Carry1, 1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1ab672d12cc5b2d40bc8dc21134f34dc
-      internalID: -8254788361838668332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main Char2 Walk_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dddc3b1ac27f1446982a33518555dea
-      internalID: 1154324840137154965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main Char2 Walk_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92a239d851c24b64a9ff8dfefe77f458
-      internalID: -8808697591656807838
+      spriteID: 0adfbc9abbe16ce50800000000000000
+      internalID: 6829179676310371744
       vertices: []
       indices: 
       edges: []
@@ -196,7 +166,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 51547313fcd2c9a49b3eb62ca7446d7f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

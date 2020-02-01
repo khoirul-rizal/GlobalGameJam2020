@@ -6,10 +6,15 @@ public class CharacterController : MonoBehaviour
     GameObject player;
     Vector2 velocity;
     BoxCollider2D boxCollider;
-
     float speed = 5;
     float walkAcceleration = 10;
     float groundDeceleration = 5;
+
+    GameObject objectiveGO;
+    
+    [SerializeField]
+    GameObject currentGO;
+    PublicEnum.typeObjective currentObj;
     void Start()
     {
       // player = gameObject.GetComponent<GameObject>();
@@ -54,7 +59,7 @@ public class CharacterController : MonoBehaviour
       Collider2D[] hits = Physics2D.OverlapBoxAll(player.transform.position, boxCollider.size+boxCollider.offset , 0);
       foreach (Collider2D hit in hits)
       {
-        if (hit.isTrigger) return;
+        if (hit.gameObject.tag == "Finish") return;
         if (hit == boxCollider)
           continue;
 
@@ -69,17 +74,26 @@ public class CharacterController : MonoBehaviour
     void CharacterInteraction()
     {
       if(Input.GetButton("Interact")){
-
+        if(objectiveGO != null){
+          currentGO = objectiveGO;
+          objectiveGO.SetActive(false);
+        }
       }
     }
-
-    void OnCollisionEnter(Collision collision)
+    
+    void OnCollisionEnter2D(Collision2D collision)
     {
-      // foreach (ContactPoint contact in collision.contacts){
-
-      // }
-      Debug.Log("hellow1");
-      if(collision.relativeVelocity.magnitude > 2) Debug.Log("hellow");
+      if(collision.gameObject.tag == "Finish"){
+        Debug.Log("Iam in");
+        objectiveGO = collision.gameObject;
+      }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+      if(collision.gameObject.tag == "Finish"){
+        Debug.Log("Iam out");
+        objectiveGO = null;
+      }
     }
 
     public Vector2 Velocity(){

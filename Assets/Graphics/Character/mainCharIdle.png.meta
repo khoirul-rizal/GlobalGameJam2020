@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: 00815d9c842d4c049907b86ee942e03b
+guid: 80bde341173061d4abf4f7349b9568d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4715895696446489267
-    second: bloodsplatter_0
+      213: -1089144892780137783
+    second: 1, 0
   - first:
-      213: -472583264465843824
-    second: bloodsplatter_1
+      213: -699172573524776084
+    second: 1, 1
   - first:
-      213: 7083447335789134184
-    second: bloodsplatter_2
+      213: 1597549310618978472
+    second: title[title.Length-1]1, 0
+  - first:
+      213: -4984358786368364121
+    second: title[title.Length-1]1, 1
+  - first:
+      213: -4143310927109454578
+    second: mainCharIdle.png1, 0
+  - first:
+      213: 9013484143703199625
+    second: mainCharIdle.png1, 1
+  - first:
+      213: 3997522316820576217
+    second: mainCharIdle1, 0
+  - first:
+      213: 3393296729971637168
+    second: mainCharIdle1, 1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -45,7 +60,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -54,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,64 +122,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloodsplatter_0
+      name: mainCharIdle1, 0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 323fd379d75b10845a7fbf02a00beac8
-      internalID: 4715895696446489267
+      spriteID: 9d779cb0e5d0a7730800000000000000
+      internalID: 3997522316820576217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloodsplatter_1
+      name: mainCharIdle1, 1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de50d0726915e744c8182b61487a135f
-      internalID: -472583264465843824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloodsplatter_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aed0a4b2d372e764cbb61bbe5158a970
-      internalID: 7083447335789134184
+      spriteID: 0bb347fb569671f20800000000000000
+      internalID: 3393296729971637168
       vertices: []
       indices: 
       edges: []
@@ -172,7 +166,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 571bc16f728796a4abcc8c21d56630a0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

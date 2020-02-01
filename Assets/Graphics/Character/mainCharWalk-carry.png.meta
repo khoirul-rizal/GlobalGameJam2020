@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: c01d0b07e1692484abb71e71c005d58b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1089144892780137783
+    second: 1, 0
+  - first:
+      213: -699172573524776084
+    second: 1, 1
+  - first:
+      213: 5607560764849394003
+    second: 1, 2
+  - first:
+      213: -5688838145115488194
+    second: 1, 3
+  - first:
+      213: 1597549310618978472
+    second: title[title.Length-1]1, 0
+  - first:
+      213: -6582473036885705784
+    second: title[title.Length-1]0, 0
+  - first:
+      213: -4984358786368364121
+    second: title[title.Length-1]1, 1
+  - first:
+      213: -1301946622013478279
+    second: title[title.Length-1]0, 1
+  - first:
+      213: -1214693828660109541
+    second: title[title.Length-1]1, 2
+  - first:
+      213: -61710843128921759
+    second: title[title.Length-1]0, 2
+  - first:
+      213: -3003023656033263900
+    second: title[title.Length-1]1, 3
+  - first:
+      213: 4973985910238711839
+    second: title[title.Length-1]0, 3
+  - first:
+      213: 3644532129039609063
+    second: mainCharWalk-carry.png1, 0
+  - first:
+      213: -6371126505488951622
+    second: mainCharWalk-carry.png0, 0
+  - first:
+      213: 5996031620276036696
+    second: mainCharWalk-carry.png1, 1
+  - first:
+      213: 2589514962783079467
+    second: mainCharWalk-carry.png0, 1
+  - first:
+      213: 205595554660492578
+    second: mainCharWalk-carry.png1, 2
+  - first:
+      213: -4893588814485863574
+    second: mainCharWalk-carry.png0, 2
+  - first:
+      213: -6465028025990778895
+    second: mainCharWalk-carry.png1, 3
+  - first:
+      213: 5740569156342138037
+    second: mainCharWalk-carry.png0, 3
+  - first:
+      213: 6588464628352174228
+    second: mainCharWalk-carry1, 0
+  - first:
+      213: -5052887280557492778
+    second: mainCharWalk-carry0, 0
+  - first:
+      213: -7846944807071337734
+    second: mainCharWalk-carry1, 1
+  - first:
+      213: -540789905701889283
+    second: mainCharWalk-carry0, 1
+  - first:
+      213: -7306965685541333035
+    second: mainCharWalk-carry1, 2
+  - first:
+      213: 2950530813404603856
+    second: mainCharWalk-carry0, 2
+  - first:
+      213: -4801759237004611787
+    second: mainCharWalk-carry1, 3
+  - first:
+      213: 8248155340769580158
+    second: mainCharWalk-carry0, 3
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mainCharWalk-carry1, 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498482c1cadee6b50800000000000000
+      internalID: 6588464628352174228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry0, 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5f7482ac980e9b0800000000000000
+      internalID: -5052887280557492778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry1, 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2ba6ad54d0a1390800000000000000
+      internalID: -7846944807071337734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry0, 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa958c227abe78f0800000000000000
+      internalID: -540789905701889283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry1, 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d717574c61789a90800000000000000
+      internalID: -7306965685541333035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry0, 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d563d7642462f820800000000000000
+      internalID: 2950530813404603856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry1, 3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fa36d2a69bc5db0800000000000000
+      internalID: -4801759237004611787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainCharWalk-carry0, 3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 20
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74dfc2f495577270800000000000000
+      internalID: 8248155340769580158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,16 +1,37 @@
 fileFormatVersion: 2
-guid: 00815d9c842d4c049907b86ee942e03b
+guid: 29d239798d45e1e46ae74b6182d4dcaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4715895696446489267
-    second: bloodsplatter_0
+      213: 9044786021765537137
+    second: 0, 0
   - first:
-      213: -472583264465843824
-    second: bloodsplatter_1
+      213: 3647156553916755266
+    second: 0, 1
   - first:
-      213: 7083447335789134184
-    second: bloodsplatter_2
+      213: 2755026677744248310
+    second: Tex1, 0
+  - first:
+      213: 8658863374503604156
+    second: Tex1, 1
+  - first:
+      213: 1597549310618978472
+    second: title[title.Length-1]1, 0
+  - first:
+      213: -4984358786368364121
+    second: title[title.Length-1]1, 1
+  - first:
+      213: 7715737420492389904
+    second: MainChar-Mop.png1, 0
+  - first:
+      213: -6219505422172251118
+    second: MainChar-Mop.png1, 1
+  - first:
+      213: 4033878152099617045
+    second: MainChar-Mop1, 0
+  - first:
+      213: 1949486032681262937
+    second: MainChar-Mop1, 1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -45,7 +66,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -54,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,64 +128,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloodsplatter_0
+      name: MainChar-Mop1, 0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 323fd379d75b10845a7fbf02a00beac8
-      internalID: 4715895696446489267
+      spriteID: 5195b139ec63bf730800000000000000
+      internalID: 4033878152099617045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bloodsplatter_1
+      name: MainChar-Mop1, 1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de50d0726915e744c8182b61487a135f
-      internalID: -472583264465843824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloodsplatter_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aed0a4b2d372e764cbb61bbe5158a970
-      internalID: 7083447335789134184
+      spriteID: 95f5d88c737fd0b10800000000000000
+      internalID: 1949486032681262937
       vertices: []
       indices: 
       edges: []
@@ -172,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 571bc16f728796a4abcc8c21d56630a0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
