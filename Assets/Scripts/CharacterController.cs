@@ -28,7 +28,7 @@ public class CharacterController : MonoBehaviour
       // player = gameObject.GetComponent<GameObject>();
       boxCollider = player.GetComponent<BoxCollider2D>();
     }
-    void Update()
+    void FixedUpdate()
     {
         CharacterMovement();
         CharacterInteraction();
@@ -116,7 +116,8 @@ public class CharacterController : MonoBehaviour
     void InteractionBlood(ObjectInteraction oi)
     {
       playerState = 3;
-      oi.cleanTreshold -= float.Parse("0.2") * Time.deltaTime;
+      float a = 0.1f;
+      oi.cleanTreshold = oi.cleanTreshold - a;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
