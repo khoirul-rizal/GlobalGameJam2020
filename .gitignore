@@ -1,0 +1,8 @@
+*.ide
+*.ide-shm
+*.ide-wal
+ggj2020/config
+*.sample
+Library/
+ggj2020/
+.vscode/settings.json
