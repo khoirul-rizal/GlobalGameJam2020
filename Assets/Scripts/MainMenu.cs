@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 using UnityEngine.Video;
 
 public class MainMenu : MonoBehaviour
@@ -20,8 +19,9 @@ public class MainMenu : MonoBehaviour
 
         videoPlayer.targetCameraAlpha = 0.5F;
 
-        string path = AssetDatabase.GetAssetPath(videoClip);
-        videoPlayer.url =  path;
+        // string path = "Assets/Graphics/MainMenu.mp4";
+        // Debug.Log("MainMenu --- "+path);
+        videoPlayer.clip = videoClip;
 
         videoPlayer.frame = 100;
 
@@ -40,6 +40,6 @@ public class MainMenu : MonoBehaviour
     void Update()
     {
         if(Input.GetButton("Interact"))
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Level0");
     }
 }

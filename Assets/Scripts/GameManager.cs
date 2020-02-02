@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
       2 = ScoreShow
     */
     public Text timerTxt;
+    public GameObject pauseGO;
     public CountScore countScore;
     public GameObject[] stageMaster;
     public int currentStage = 0;
@@ -75,8 +77,44 @@ public class GameManager : MonoBehaviour
         gameState = 2;
       }
     }
+
+    public void PauseQuit()
+    {
+      SceneManager.LoadScene(0);
+    }
+    public void PauseRestart()
+    {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void PauseUnpause()
+    {
+      Debug.Log("You Unpause");
+      pauseGO.SetActive(false);
+      gameState = 1;
+      characterController.enabled = true;
+    }
+    void PauseRule()
+    {
+      if(Input.GetButtonDown("Pause"))
+      {
+        Debug.Log("You PRess it");
+        
+        if(gameState == 4){
+          PauseUnpause();
+        }
+        else if(gameState == 1){
+          Debug.Log("You CHange");
+          pauseGO.SetActive(true);
+          gameState = 4;
+          characterController.enabled = false;
+        }
+      }
+    }
 		void Update()
 		{
+      PauseRule();
+      if(gameState == 4) return;
       GameRules();
       CountDownState();
       GameBegin();
@@ -100,7 +138,10 @@ public class GameManager : MonoBehaviour
 
       if(Input.GetButtonDown("Interact"))
       {
-        if(currentStage+1 == stageMaster.Length) Debug.Log("Next Scene");
+        if(currentStage+1 == stageMaster.Length) {
+          if(SceneManager.GetActiveScene().buildIndex == 5) SceneManager.LoadScene(0);
+          else SceneManager.LoadScene("Level"+SceneManager.GetActiveScene().buildIndex);
+        }
         else {
           ResetStage(currentStage);
           countScore.HideScore();
@@ -123,14 +164,15 @@ public class GameManager : MonoBehaviour
       if (gameState != 1) return;
       characterController.enabled = true;
       timeLeft -= Time.deltaTime;
-      timerTxt.text = timeLeft.ToString();
+      timerTxt.text = (Mathf.Round(timeLeft * 10f) / 10f).ToString();
     }
     void CountDownState()
     {
       if (gameState != 0) return;
+      timerTxt.text = "00:00";
       characterController.enabled = false;
 			time += Time.deltaTime;
-			if(time > 4 && gameState == 0) {
+			if(time > 4 && gameState == 0 ) {
         videoPlayer.Stop();
         videoPlayer.targetCameraAlpha = 0;
         gameState = 1;
@@ -140,12 +182,12 @@ public class GameManager : MonoBehaviour
     void CountDown()
     {
       GameObject camera = GameObject.Find("Main Camera");
+      if(GetComponent<UnityEngine.Video.VideoPlayer>() != null) Destroy(GetComponent<UnityEngine.Video.VideoPlayer>());
       videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
       videoPlayer.targetCameraAlpha = 0.5F;
       videoPlayer.playOnAwake = true;
       videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
-      string path = AssetDatabase.GetAssetPath(videoClip);
-      videoPlayer.url =  path;
+      videoPlayer.clip =  videoClip;
       videoPlayer.frame = 100;
       videoPlayer.isLooping = true;
       videoPlayer.loopPointReached += EndReached;
