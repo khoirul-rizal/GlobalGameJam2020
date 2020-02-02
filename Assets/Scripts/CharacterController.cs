@@ -4,6 +4,8 @@ public class CharacterController : MonoBehaviour
 {
     [SerializeField]
     GameObject player;
+    [SerializeField]
+    GameObject corpse;
     Vector2 velocity;
     BoxCollider2D boxCollider;
     float speed = 5;
@@ -66,6 +68,7 @@ public class CharacterController : MonoBehaviour
       foreach (Collider2D hit in hits)
       {
         if (hit.gameObject.tag == "Finish") return;
+        if (hit.gameObject.tag == "Trigger") return;
         if (hit == boxCollider)
           continue;
 
@@ -86,26 +89,28 @@ public class CharacterController : MonoBehaviour
 
           if(playerState != 1)
           {
+            corpse.SetActive(false);
             if(objectInteraction.TypeObjective == PublicEnum.typeObjective.cleanBlood) InteractionBlood(objectInteraction);
-            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.cleanBody) InteractionBody(objectInteraction);
+            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.cleanBody) InteractionBody();
           }else{
-            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.truckDumper) InteractionTruckDumper(objectInteraction);
-
+            if(objectInteraction.TypeObjective == PublicEnum.typeObjective.truckDumper) InteractionTruckDumper();
+            corpse.SetActive(true);
             Debug.Log("You carrying body");
           }
 
         }
       }
     }
-    void InteractionTruckDumper(ObjectInteraction oi)
+    void InteractionTruckDumper()
     {
       playerState = 0;
-      Destroy(currentGO);
+      currentGO.SetActive(false);
       currentGO = null;
     }
-    void InteractionBody(ObjectInteraction oi)
+    void InteractionBody()
     {
       currentGO = objectiveGO;
+      currentGO.GetComponent<SpriteRenderer>().enabled = false;
       playerState = 1;
     }
     void InteractionBlood(ObjectInteraction oi)
@@ -115,19 +120,24 @@ public class CharacterController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-      if(collision.gameObject.tag == "Finish"){
+      if(collision.gameObject.tag == "Finish" || collision.gameObject.tag == "Trigger"){
         Debug.Log("Iam in");
         objectiveGO = collision.gameObject;
       }
     }
     void OnCollisionExit2D(Collision2D collision)
     {
-      if(collision.gameObject.tag == "Finish"){
+      if(collision.gameObject.tag == "Finish" || collision.gameObject.tag == "Trigger"){
         Debug.Log("Iam out");
         objectiveGO = null;
       }
     }
-
+    public void ResetPlayerState()
+    {
+      currentGO = null;
+      corpse.SetActive(false);
+      playerState = 0;
+    }
     public Vector2 Velocity(){
       return velocity;
     }

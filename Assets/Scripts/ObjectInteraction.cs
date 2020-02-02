@@ -2,6 +2,7 @@
 
 public class ObjectInteraction : MonoBehaviour
 {
+    public GameObject vfxCompleted;
     public PublicEnum.typeObjective TypeObjective = PublicEnum.typeObjective.cleanBlood;
     public PublicEnum.deadBody DeadBodyFace = PublicEnum.deadBody.up;
     public Sprite[] bloodList;
@@ -10,6 +11,11 @@ public class ObjectInteraction : MonoBehaviour
     public float cleanTreshold = 1;
     SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
+    void OnEnable()
+    {
+        cleanTreshold = 1;
+        if(spriteRenderer != null) spriteRenderer.enabled = true;
+    }
     int GetDeadBodyFace()
     {
         int indexDeadBody = 0;
@@ -32,7 +38,10 @@ public class ObjectInteraction : MonoBehaviour
         
         if(TypeObjective == PublicEnum.typeObjective.cleanBlood)
         {
-            if(cleanTreshold < 0) Destroy(gameObject);
+            if(cleanTreshold < 0) {
+                Instantiate(vfxCompleted, transform.position, Quaternion.identity );
+                gameObject.SetActive(false);
+            }
         }
     }
 
