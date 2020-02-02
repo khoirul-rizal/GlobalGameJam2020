@@ -32,7 +32,7 @@ public class ObjectInteraction : MonoBehaviour
         if (TypeObjective == PublicEnum.typeObjective.cleanBody) spriteRenderer.sprite = bodyList[GetDeadBodyFace()];
     }
 
-    void FixedUpdate()
+    void Update()
     {
         spriteRenderer.color = new Color(spriteRenderer.color.r,spriteRenderer.color.g,spriteRenderer.color.b, cleanTreshold);
         

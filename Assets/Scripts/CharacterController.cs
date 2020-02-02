@@ -28,7 +28,7 @@ public class CharacterController : MonoBehaviour
       // player = gameObject.GetComponent<GameObject>();
       boxCollider = player.GetComponent<BoxCollider2D>();
     }
-    void FixedUpdate()
+    void Update()
     {
         CharacterMovement();
         CharacterInteraction();
